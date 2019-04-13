@@ -1,0 +1,16 @@
+<div ng-controller="ctrlAbout">
+    <ul>
+        <li ng-repeat="n in names">{{n | uppercase}} <span ng-click="remove($index)">&times;</span></li>
+    </ul>
+
+    <input ng-model="addMe">
+    <button ng-click="add()">Add</button>
+
+    <div ng-app="xxx">
+        <a ui-sref="hello" ui-sref-active="active">Hello</a>
+        <a ui-sref="about" ui-sref-active="active">About</a>
+
+        <ui-view></ui-view>
+    </div>
+
+</div>

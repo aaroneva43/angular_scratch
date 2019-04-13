@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.5/angular-ui-router.js"></script>
+
+    <script src="helloworld.js"></script>
+    <script src="ctrlAbout.js"></script>
+
+
+</head>
+
+<body>
+    <div ng-app="myApp">
+        <a ui-sref="hello">Hello</a>
+        <a ui-sref="about">About</a>
+
+        <ui-view></ui-view>
+    </div>
+
+</body>
+
+
+</html>

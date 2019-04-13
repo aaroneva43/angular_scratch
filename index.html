@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en" ng-app="angularApp">
+
+<head>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.5/angular-ui-router.js"></script>
+
+
+    <script src="app.js"></script>
+    <script src="routes.js"></script>
+
+</head>
+
+<body ng-controller="mainCtrl">
+    <ul>
+        <li ng-repeat="n in names">{{n | uppercase}} <span ng-click="remove($index)">&times;</span></li>
+    </ul>
+
+    <input ng-model="addMe">
+    <button ng-click="add()">Add</button>
+
+    <div ng-app="xxx">
+        <a ui-sref="hello" ui-sref-active="active">Hello</a>
+        <a ui-sref="about" ui-sref-active="active">About</a>
+
+        <ui-view></ui-view>
+    </div>
+
+</body>
+
+
+</html>
